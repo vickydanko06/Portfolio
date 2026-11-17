@@ -75,8 +75,8 @@ font-family: Arial, Helvetica, sans-serif;
     border-radius: 0 0 0 12px;
     z-index: 2;
 
-	z-index: 100;
-    pointer-events: auto;
+z-index: 100;
+pointer-events: auto;
 }
 
 /* Keep visited links consistent */
@@ -190,6 +190,17 @@ border-bottom: 3px solid #1a1a2e;
     margin-bottom: 25px;
 }
 
+
+/* Desktop About Me profile picture */
+@media (min-width: 768px) {
+    #about img {
+        width: 280px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 /* TODO: Centre the main content and add padding (.content-wrapper)
    Hint: max-width: 800px; margin: 2rem auto; padding: 0 1rem;
 */
@@ -282,6 +293,10 @@ img {
 
 }
 
+html {
+    background-color: #1a1a2e;
+    overscroll-behavior-y: none;
+}
 
 .site-header h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
